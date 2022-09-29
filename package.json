@@ -1,5 +1,5 @@
 {
-  "name": "sharebus-appsync",
+  "name": "graphql-appsync",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -12,12 +12,12 @@
     "test": "sst load-config -- vitest run"
   },
   "devDependencies": {
-    "aws-cdk-lib": "2.32.0",
-    "@serverless-stack/cli": "^1.12.2",
-    "@serverless-stack/resources": "^1.12.2",
+    "aws-cdk-lib": "2.39.1",
+    "@serverless-stack/cli": "^1.15.2",
+    "@serverless-stack/resources": "^1.15.2",
     "typescript": "^4.8.3",
     "@tsconfig/node16": "^1.0.3",
-    "vitest": "^0.23.2"
+    "vitest": "^0.23.4"
   },
   "workspaces": [
     "services"
