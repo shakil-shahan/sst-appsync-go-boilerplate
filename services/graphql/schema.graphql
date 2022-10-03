@@ -1,0 +1,20 @@
+type SampleResponse {
+  id: ID!
+  content: String!
+}
+
+input SampleInput {
+  id: ID!
+  content: String
+}
+
+type Query {
+  getList: [SampleResponse]
+  getOne(input: SampleInput!): SampleResponse
+}
+
+type Mutation {
+  create(input: SampleInput!): SampleResponse
+  update(input: SampleInput!): SampleResponse
+  delete(input: SampleInput!): SampleResponse
+}
