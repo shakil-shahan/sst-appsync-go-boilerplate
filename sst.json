@@ -1,5 +1,5 @@
 {
-  "name": "sharebus-appsync",
+  "name": "appsync-boilerplate",
   "region": "eu-west-1",
   "main": "stacks/index.ts"
 }

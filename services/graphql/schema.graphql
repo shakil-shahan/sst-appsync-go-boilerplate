@@ -1,63 +1,20 @@
-# type TripEvent {
-# 	id: ID!
-# 	name: String!
-# 	category: TripEventCategory
-# 	info_to_travellers: String
-#   website_url: AWSURL
-#   image_url: AWSURL
-#   status: TripEventStatus!
-# }
-
-# enum TripEventCategory {
-#   SPORT
-#   MUSIC
-#   WELLNESS
-#   VACATION
-#   OTHER
-# }
-
-# enum TripEventStatus {
-#   PUBLISHED
-# }
-
-# input UpdateTripEventInput {
-#   id: ID!
-#   name: String
-#   category: TripEventCategory
-#   info_to_travellers: String
-#   website_url: AWSURL
-#   image_url: AWSURL
-#   status: TripEventStatus
-# }
-
-# type Mutation {
-#   updateTripEvent(input: UpdateTripEventInput!): TripEvent
-# }
-
-# -------
-
-type Note {
+type SampleResponse {
   id: ID!
   content: String!
 }
 
-input NoteInput {
-  id: ID!
-  content: String!
-}
-
-input UpdateNoteInput {
+input SampleInput {
   id: ID!
   content: String
 }
 
 type Query {
-  listNotes: [Note]
-  getNoteById(noteId: String!): Note
+  getList: [SampleResponse]
+  getOne(input: SampleInput!): SampleResponse
 }
 
 type Mutation {
-  createNote(note: NoteInput!): Note
-  deleteNote(noteId: String!): String
-  updateNote(note: UpdateNoteInput!): Note
+  create(input: SampleInput!): SampleResponse
+  update(input: SampleInput!): SampleResponse
+  delete(input: SampleInput!): SampleResponse
 }
