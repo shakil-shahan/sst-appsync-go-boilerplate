@@ -1,4 +1,6 @@
-# GraphQL API with AWS AppSync with Go using SST
+# GO Lambda function local development
+### Build GraphQL API with AWS AppSync and Lambda with Go by using SST
+
 <img src="https://d33wubrfki0l68.cloudfront.net/cc1e61abe8db8f1be699c2cf5adde992db3ab776/00968/img/logo.svg" alt="Go" height="25" />
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/1200px-Go_Logo_Blue.svg.png" alt="Go" height="25" />
 <img src="https://miro.medium.com/max/1400/1*q_DYf7YPkJ7G-m9gC06h5w.jpeg" alt="Go" height="25" />
